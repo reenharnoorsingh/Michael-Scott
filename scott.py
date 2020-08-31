@@ -1,6 +1,8 @@
 import pyttsx3  # pip install pyttsx3
 import datetime
 import speech_recognition as sr
+import wikipedia
+import webbrowser
 
 engine = pyttsx3.init('sapi5')  # using Microsoft Speech API
 voices = engine.getProperty('voices')
@@ -45,4 +47,18 @@ def takeCommand():  # it takes microphone input from the user and returns string
 
 if __name__ == "__main__":
     wishMe()
-    query = takeCommand().lower()
+    while True:
+        query = takeCommand().lower()
+
+    # Task excecution based on query
+
+    if 'wikipedia' in query: #searches and speaks wikipedia
+        speak("Searching Wikipedia.....")
+        query = query.replace("wikipedia","")
+        results = wikipedia.summary(query, sentences=2)
+        print("According to Wikipedia")
+        print(results)
+        speak(results)
+    
+    elif 'open youtube' in query:
+        webbrowser.open('youtube.com')
