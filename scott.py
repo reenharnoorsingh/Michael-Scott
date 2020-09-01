@@ -28,7 +28,9 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("My name is Michael Scott. What can I do for you today? That's What She Said")
+    intro = "My name is Michael Scott. What can I do for you today? That's What She Said" #intro message
+    print(intro)
+    speak(intro)
 
 
 def takeCommand():
@@ -101,7 +103,7 @@ if __name__ == "__main__":
             os.startfile(powershell)
 
         elif 'tell me about yourself' in query:
-            about = "My name is Micheal Scott, I work in a paper company called Dunder Mifflin in Scranton,Pennsylvania as Regional Manager. Some of my colleagues say that I am The Best Boss Ever. I am married to Holly Flax, she lives in Colorado."
+            about = "My name is Micheal Scott, I work in a paper company called Dunder Mifflin in Scranton,Pennsylvania as Regional Manager. Some of my colleagues say that I am The Best Boss Ever. I am married to Holly Flax, she lives in Colorado. Currenty I am employed on Harnoor's Computer"
             print(about)
             speak(about)
 
