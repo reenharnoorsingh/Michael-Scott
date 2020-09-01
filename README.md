@@ -4,8 +4,11 @@
 So the assistant pretty much does all the basic things you say to it. Such as:
 - Opens YouTube
 - Opens Google
+- Opens StackOverflow
 - Tells the time
 - Opens VS Code
 - Opens Spotify 
+- Opens PowerShell
 - Searches and Speaks Wikipedia
+- Opens Netflix
 - Tells Stuff about Michael Scott(The Office) like colleagues, about himself and few of Micheal Scott's best jokes
