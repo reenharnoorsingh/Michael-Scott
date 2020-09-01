@@ -76,11 +76,11 @@ if __name__ == "__main__":
             webbrowser.get(
                 "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s").open("google.com")
 
-        elif 'open stackoverflow' in query:
+        elif 'open stack overflow' in query:
             webbrowser.get(
                 "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s").open("stackoverflow.com")
 
-        elif 'open Netflix' in query:
+        elif 'open netflix' in query:
             webbrowser.get(
                 "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s").open("netflix.com")
 
@@ -106,7 +106,7 @@ if __name__ == "__main__":
             speak(about)
 
         elif 'who do you work with' in query:
-            colleagues = "I work with one of the best people in Scranton. I love my employees even though I hit one of you with my car. Pam Beesly Halpert is my best friend and the office administrator. Jim Halpert is a prankster and a true friend who is now a co-ownwer of sports startup Athleap. Dwight Schrute is the Assitant to the Regional Manager at Dunder Mifflin and my right hand guy. Oscar Martinez, Angela Schrute and Kevin Malone are my accountants. Creed Bratton and Meredith Palmer are in Quality Assurance. Fun Fact, Merdith was the one I hit with the car. Ryan Howard, the temp is my prodigee. Stanley Hudsonn, Andy Bernard and Phyllis Vance, Vance Refrigeration make up the sales. Kelly Kapoor is in Customer Service. And the person I hate the most Toby Flenderson is in HR"
+            colleagues = "I work with one of the best people in Scranton. I love my employees even though I hit one of them with my car. Pam Beesly Halpert is my best friend and the office administrator. Jim Halpert is a prankster and a true friend who is now a co-ownwer of sports startup Athleap. Dwight Schrute is the Assistant to the Regional Manager at Dunder Mifflin and my right hand guy. Oscar Martinez, Angela Schrute and Kevin Malone are my accountants. Creed Bratton and Meredith Palmer are in Quality Assurance. Fun Fact, Merdith was the one I hit with the car. Ryan Howard, the temp is my prodigee. Stanley Hudsonn, Andy Bernard and Phyllis Vance, Vance Refrigeration make up the sales. Kelly Kapoor is in Customer Service. And the person I hate the most Toby Flenderson is in HR"
             print(colleagues)
             speak(colleagues)
 
