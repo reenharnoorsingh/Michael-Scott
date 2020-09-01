@@ -12,3 +12,5 @@ So the assistant pretty much does all the basic things you say to it. Such as:
 - Searches and Speaks Wikipedia
 - Opens Netflix
 - Tells Stuff about Michael Scott(The Office) like colleagues, about himself and few of Micheal Scott's best jokes
+
+Going to add some other functionalities later and will be updating it regularly! 
