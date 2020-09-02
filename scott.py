@@ -62,11 +62,7 @@ if __name__ == "__main__":
         query = takeCommand().lower()
 
         # Logic for executing tasks based on query
-        if 'hi' in query:
-            msg = "Hello what can I do for you?"
-            print(msg)
-            speak(msg)
-            
+       
         if 'wikipedia' in query:  # searches and speaks wikipedia
             speak('Searching Wikipedia...')
             query = query.replace("wikipedia", "")
@@ -121,6 +117,11 @@ if __name__ == "__main__":
             joke= "If I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice. That's What She Said"
             print(joke)
             speak(joke)
+
+        elif 'hello' in query:
+            msg = "Hello what can I do for you?"
+            print(msg)
+            speak(msg)
 
         elif 'goodbye' in query:
             msg1="Have a nice day!"
