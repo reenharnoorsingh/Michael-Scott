@@ -58,10 +58,15 @@ def takeCommand():
 if __name__ == "__main__":
     wishMe()
     while True:
-        # if 1:
+    
         query = takeCommand().lower()
 
         # Logic for executing tasks based on query
+        if 'hi' in query:
+            msg = "Hello what can I do for you?"
+            print(msg)
+            speak(msg)
+            
         if 'wikipedia' in query:  # searches and speaks wikipedia
             speak('Searching Wikipedia...')
             query = query.replace("wikipedia", "")
@@ -108,7 +113,7 @@ if __name__ == "__main__":
             speak(about)
 
         elif 'who do you work with' in query:
-            colleagues = "I work with one of the best people in Scranton. I love my employees even though I hit one of them with my car. Pam Beesly Halpert is my best friend and the office administrator. Jim Halpert is a prankster and a true friend who is now a co-ownwer of sports startup Athleap. Dwight Schrute is the Assistant to the Regional Manager at Dunder Mifflin and my right hand guy. Oscar Martinez, Angela Schrute and Kevin Malone are my accountants. Creed Bratton and Meredith Palmer are in Quality Assurance. Fun Fact, Merdith was the one I hit with the car. Ryan Howard, the temp is my prodigee. Stanley Hudsonn, Andy Bernard and Phyllis Vance, Vance Refrigeration make up the sales. Kelly Kapoor is in Customer Service. And the person I hate the most Toby Flenderson is in HR"
+            colleagues = "I work with one of the best people in Scranton. I love my employees even though I hit one of them with my car. Pam Beesly Halpert is my best friend and the office administrator. Jim Halpert is a prankster and a true friend who is now a co-ownwer of sports startup Athleap. Dwight Schrute is the Assistant to the Regional Manager at Dunder Mifflin and my right hand guy. Oscar Martinez, Angela Schrute and Kevin Malone are my accountants. Creed Bratton and Meredith Palmer are in Quality Assurance. Fun Fact, Meredith was the one I hit with the car. Ryan Howard, the temp is my prodigee. Stanley Hudsonn, Andy Bernard and Phyllis Vance, Vance Refrigeration make up the sales. Kelly Kapoor is in Customer Service. And the person I hate the most Toby Flenderson is in HR"
             print(colleagues)
             speak(colleagues)
 
@@ -118,4 +123,7 @@ if __name__ == "__main__":
             speak(joke)
 
         elif 'goodbye' in query:
+            msg1="Have a nice day!"
+            print(msg1)
+            speak(msg1)
             exit()
