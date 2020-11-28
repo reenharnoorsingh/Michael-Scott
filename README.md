@@ -6,10 +6,10 @@ So the assistant pretty much does all the basic things you say to it. Such as:
 - Opens Google
 - Opens StackOverflow
 - Tells the time
-- Opens VS Code
-- Opens Spotify 
+- Opens VS Code(should be downladed)
+- Opens Spotify (should be downloaded)
 - Opens PowerShell
-- Searches and Speaks Wikipedia
+- Searches and Speaks Wikipedia Info
 - Opens Netflix
 - Tells Stuff about Michael Scott(The Office) like colleagues, about himself and few of Micheal Scott's best jokes
 - Responds to Hello, Goodbye and Great
