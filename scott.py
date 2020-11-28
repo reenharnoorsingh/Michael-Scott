@@ -28,7 +28,7 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    intro = "My name is Michael Scott. What can I do for you today? That's What She Said" #intro message
+    intro = "My name is Michael Scott. What can I do for you today? That's What She Said"  # intro message
     print(intro)
     speak(intro)
 
@@ -58,11 +58,11 @@ def takeCommand():
 if __name__ == "__main__":
     wishMe()
     while True:
-    
+
         query = takeCommand().lower()
 
         # Logic for executing tasks based on query
-       
+
         if 'wikipedia' in query:  # searches and speaks wikipedia
             speak('Searching Wikipedia...')
             query = query.replace("wikipedia", "")
@@ -98,7 +98,7 @@ if __name__ == "__main__":
         elif 'open spotify' in query:
             spotify = "C:\\Users\\Harnoor Singh\\AppData\\Roaming\\Spotify\\Spotify.exe"
             os.startfile(spotify)
-        
+
         elif 'open powershell' in query:
             powershell = "%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe"
             os.startfile(powershell)
@@ -114,7 +114,7 @@ if __name__ == "__main__":
             speak(colleagues)
 
         elif "tell a joke" in query:
-            joke= "If I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice. That's What She Said"
+            joke = "If I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice. That's What She Said"
             print(joke)
             speak(joke)
 
@@ -123,8 +123,13 @@ if __name__ == "__main__":
             print(msg)
             speak(msg)
 
-        elif 'goodbye' in query:
-            msg1="Have a nice day!"
+        elif 'great' in query:
+            msg1 = "Thanks for the compliment!"
             print(msg1)
             speak(msg1)
+
+        elif 'goodbye' in query:
+            msg2 = "Have a nice day!"
+            print(msg2)
+            speak(msg2)
             exit()
